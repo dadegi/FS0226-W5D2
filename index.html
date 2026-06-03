@@ -84,33 +84,49 @@
 
 			<h2 class="title">overlay + modal</h2>
 
-            <button type="button" id="openModal">APRI</button>
+			<button type="button" id="openModal">APRI</button>
 
-            <p>&nbsp;</p>
+			<p>&nbsp;</p>
 
 			<div class="overlay">
 				<div class="modal">
 					<button class="positionAbs closeModal">❌</button>
-					<h2>Titolo modal</h2>
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing
-						elit. Voluptatem labore totam reprehenderit amet debitis
-						exercitationem est illo porro. Commodi enim, unde illo
-						voluptates quasi totam amet ipsa tenetur quaerat est.
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quaerat mollitia sequi, consequatur laborum aliquid nam
-						cum quam id. Soluta assumenda in eos ipsum, harum
-						praesentium animi omnis numquam placeat a. Lorem ipsum,
-						dolor sit amet consectetur adipisicing elit. Quis
-						distinctio accusamus libero esse nesciunt, iusto
-						eligendi animi cupiditate alias, odit ullam iure
-						perspiciatis! Voluptatibus repudiandae voluptate sunt
-						dicta magni consequatur!
-					</p>
-					<button class="closeModal">Conferma</button>
+					<h2>Form modale</h2>
+					<form>
+						<label for="userName">Nome completo</label>
+						<input
+							type="text"
+							id="userName"
+							name="userName"
+						/><br />
+						<label for="userEmail">Email</label>
+						<input
+							type="text"
+							id="userEmail"
+							name="userEmail"
+						/><br />
+						<label for="userDate">Data di iscrizione</label>
+						<input
+							type="date"
+							id="userDate"
+							name="userDate"
+						/><br />
+						<button type="submit">Conferma</button>
+					</form>
 				</div>
 			</div>
 		</div>
+
+		<div class="container">
+			<div class="formResponse">
+				<h2>Dati del form</h2>
+				<h3 id="registerName"></h3>
+				<h3 id="registerEmail"></h3>
+				<h3 id="registerDate"></h3>
+			</div>
+		</div>
+
+		<p>&nbsp;</p>
 
 		<script src="assets/js/script.js"></script>
 	</body>
