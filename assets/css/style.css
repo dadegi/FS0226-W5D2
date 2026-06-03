@@ -1,0 +1,129 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+h1 {
+	text-align: center;
+    margin-block-start: 0;
+}
+
+.title {
+    text-align: center;
+    background-color: burlywood;
+    position: sticky;
+    z-index: 500;
+}
+
+#relative {
+    top: 100px;
+}
+
+#absolute {
+    top: 129px;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.first,
+.second,
+.third {
+	width: 25%;
+	height: 200px;
+	border: 2px solid black;
+	margin-top: 20px;
+}
+
+.second {
+	background-color: greenyellow;
+}
+
+.relative {
+	position: relative;
+	top: 10px;
+	left: 20px;
+}
+
+.absolute {
+	position: absolute;
+	top: 900px;
+	right: 8px;
+}
+
+.positionAbs {
+    position: absolute; /* Sarà in posizione assoluta rispetto al padre, che ha classe .relative e quindi ha position: relative; */
+    top: -2px;
+    right: -2px;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.relativeAbs {
+	position: relative;
+}
+
+.social div {
+    width: 50px;
+    height: 50px;
+}
+
+#facebook {
+    background: url('https://files.softicons.com/download/social-media-icons/hq-social-media-icons-by-design-bolts/png/256x256/Facebook.png');
+    background-size: contain;
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+}
+
+#instagram {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s');
+    background-size: contain;
+    position: fixed;
+    right: 10px;
+    bottom: 150px;
+}
+
+#topPage {
+    background: url('https://www.alessandracagalli-psicologa.it/wp-content/uploads/2015/10/alessandracagalli-psicologa-torna-su-13.png');
+    background-size: contain;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+    z-index: 10000;
+}
+
+nav ul {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+}

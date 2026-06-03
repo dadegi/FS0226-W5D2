@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Positioning avanzato</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	</head>
+	<body id="top">
+        <header>
+            <h1>Positioning avanzato</h1>
+            <nav>
+                <ul>
+                    <li><a href="#relative">relative</a></li>
+                    <li><a href="#absolute">absolute</a></li>
+                    <li><a href="#relAbs">relative-absolute</a></li>
+                </ul>
+            </nav>
+        </header>
+		
+		<div class="container">
+			<h2 class="title" id="relative">position: relative;</h2>
+
+			<div class="first">
+				<h4>PRIMO DIV</h4>
+			</div>
+			<div class="second relative">
+				<h4>SECONDO DIV</h4>
+			</div>
+			<div class="third">
+				<h4>TERZO DIV</h4>
+			</div>
+
+			<hr />
+
+			<h2 class="title" id="absolute">position: absolute;</h2>
+
+			<div class="first">
+				<h4>PRIMO DIV</h4>
+			</div>
+			<div class="second absolute">
+				<h4>SECONDO DIV</h4>
+			</div>
+			<div class="third">
+				<h4>TERZO DIV</h4>
+			</div>
+
+			<hr />
+
+			<h2 class="title" id="relAbs">relative + absolute;</h2>
+
+			<div class="first">
+				<h4>PRIMO DIV</h4>
+			</div>
+			<div class="second relativeAbs">
+				<h4>SECONDO DIV</h4>
+				<div class="positionAbs">❌</div>
+			</div>
+			<div class="third">
+				<h4>TERZO DIV</h4>
+			</div>
+
+			<hr />
+
+			<h2 class="title">position: fixed; (notare posizione dei button social)</h2>
+
+			<div class="social">
+				<div id="facebook"></div>
+				<div id="instagram"></div>
+				<a href="#top">
+					<div id="topPage"></div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
